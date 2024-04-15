@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://da42jajftrxdf"]
+
+[ext_resource type="Script" path="res://block.gd" id="1_ktagn"]
+[ext_resource type="Texture2D" uid="uid://bxvmwdm8ncywr" path="res://Assets/elementWood051.png" id="2_oijkm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gh47y"]
+size = Vector2(67, 217)
+
+[node name="Wood1x3" type="RigidBody2D"]
+input_pickable = true
+can_sleep = false
+script = ExtResource("1_ktagn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_gh47y")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_oijkm")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

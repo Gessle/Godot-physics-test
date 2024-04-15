@@ -11,9 +11,16 @@ config_version=5
 [application]
 
 config/name="Test1"
-run/main_scene="res://main.tscn"
+run/main_scene="res://Scenes/Maps/Map3.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
+boot_splash/image="res://Assets/logo.png"
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="viewport"
 
 [input]
 
@@ -36,3 +43,4 @@ CLICK={
 [rendering]
 
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true

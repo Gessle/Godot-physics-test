@@ -1,27 +1,21 @@
 [gd_scene load_steps=4 format=3 uid="uid://d2f7kpw8gj2k3"]
 
 [ext_resource type="Script" path="res://block.gd" id="1_xxvnk"]
-[ext_resource type="Texture2D" uid="uid://bh8x2gexboj5a" path="res://icon.svg" id="2_8pt1j"]
+[ext_resource type="Texture2D" uid="uid://bdc7v5wbwhipb" path="res://Assets/elementWood048.png" id="2_fb20j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gh47y"]
-size = Vector2(122, 254)
+size = Vector2(67, 135)
 
-[node name="Node2D" type="RigidBody2D"]
+[node name="Wood1x2" type="RigidBody2D"]
 input_pickable = true
 can_sleep = false
 script = ExtResource("1_xxvnk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 65)
+position = Vector2(-0.5, -0.5)
 shape = SubResource("RectangleShape2D_gh47y")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 0.0509804, 1)
-texture = ExtResource("2_8pt1j")
-
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 0.0509804, 1)
-position = Vector2(0, 128)
-texture = ExtResource("2_8pt1j")
+texture = ExtResource("2_fb20j")
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]

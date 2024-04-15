@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://rgjqspjx0wql"]
+
+[ext_resource type="Texture2D" uid="uid://vxwpkqpjpknx" path="res://Assets/grass.png" id="2_ryki6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gh47y"]
+size = Vector2(700, 70)
+
+[node name="Node2D" type="StaticBody2D"]
+input_pickable = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ryki6")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(70, 0)
+texture = ExtResource("2_ryki6")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(140, 0)
+texture = ExtResource("2_ryki6")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(210, 0)
+texture = ExtResource("2_ryki6")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(280, 0)
+texture = ExtResource("2_ryki6")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(350, 0)
+texture = ExtResource("2_ryki6")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(420, 0)
+texture = ExtResource("2_ryki6")
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+position = Vector2(490, 0)
+texture = ExtResource("2_ryki6")
+
+[node name="Sprite2D9" type="Sprite2D" parent="."]
+position = Vector2(560, 0)
+texture = ExtResource("2_ryki6")
+
+[node name="Sprite2D10" type="Sprite2D" parent="."]
+position = Vector2(630, 0)
+texture = ExtResource("2_ryki6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(315, 0)
+shape = SubResource("RectangleShape2D_gh47y")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

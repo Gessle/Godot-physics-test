@@ -1,0 +1,61 @@
+[gd_scene load_steps=11 format=3 uid="uid://bb80i85b1wv4r"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_7ayd0"]
+[ext_resource type="PackedScene" uid="uid://dosj7nau12fbv" path="res://Scenes/Blocks/Wood1x1.tscn" id="2_20gmx"]
+[ext_resource type="PackedScene" uid="uid://dkaqu7u5ancfx" path="res://Scenes/Blocks/Wood3x1.tscn" id="3_sam5s"]
+[ext_resource type="PackedScene" uid="uid://y5uwwhwdr3s1" path="res://Scenes/Blocks/Wood2x1.tscn" id="4_tddwy"]
+[ext_resource type="PackedScene" uid="uid://rgjqspjx0wql" path="res://Scenes/Blocks/Ground.tscn" id="5_wmks3"]
+[ext_resource type="PackedScene" uid="uid://d2f7kpw8gj2k3" path="res://Scenes/Blocks/Wood1x2.tscn" id="6_xf55b"]
+[ext_resource type="PackedScene" uid="uid://cvkv51gi0xsr8" path="res://Scenes/Blocks/HeroBall.tscn" id="7_2o1no"]
+[ext_resource type="PackedScene" uid="uid://dmvg75giawkci" path="res://Scenes/Blocks/Flag.tscn" id="8_qsowp"]
+[ext_resource type="PackedScene" uid="uid://bbnkdw1ap2o61" path="res://Scenes/Blocks/Stone2x1.tscn" id="9_oyg38"]
+[ext_resource type="PackedScene" uid="uid://dwiclgsrwum8l" path="res://Scenes/Blocks/Stone1x2.tscn" id="10_jcd6v"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(543, 189.5)
+script = ExtResource("1_7ayd0")
+
+[node name="Node2D" parent="." instance=ExtResource("2_20gmx")]
+position = Vector2(288, 283.5)
+
+[node name="Node2D4" parent="." instance=ExtResource("2_20gmx")]
+position = Vector2(196, 70.5)
+
+[node name="Node2D7" parent="." instance=ExtResource("2_20gmx")]
+position = Vector2(63, 209.5)
+
+[node name="Node2D5" parent="." instance=ExtResource("2_20gmx")]
+position = Vector2(51, 67.5)
+
+[node name="Node2D2" parent="." instance=ExtResource("3_sam5s")]
+position = Vector2(214, 214.5)
+
+[node name="Node2D6" parent="." instance=ExtResource("3_sam5s")]
+position = Vector2(133, 144.5)
+
+[node name="Node2D3" parent="." instance=ExtResource("4_tddwy")]
+position = Vector2(17, 427.5)
+
+[node name="Node2D8" parent="." instance=ExtResource("5_wmks3")]
+position = Vector2(13, 495.5)
+
+[node name="Node2D9" parent="." instance=ExtResource("5_wmks3")]
+position = Vector2(-687, 495.5)
+
+[node name="Node2D10" parent="." instance=ExtResource("5_wmks3")]
+position = Vector2(713, 495.5)
+
+[node name="Node2D12" parent="." instance=ExtResource("6_xf55b")]
+position = Vector2(78, 321.5)
+
+[node name="HeroBall" parent="." instance=ExtResource("7_2o1no")]
+position = Vector2(122, 7.5)
+
+[node name="Flag" parent="." instance=ExtResource("8_qsowp")]
+position = Vector2(581, 358.5)
+
+[node name="Wood2x1" parent="." instance=ExtResource("9_oyg38")]
+position = Vector2(576, 425.5)
+
+[node name="Wood1x2" parent="." instance=ExtResource("10_jcd6v")]
+position = Vector2(284, 389.5)

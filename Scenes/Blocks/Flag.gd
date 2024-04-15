@@ -1,4 +1,4 @@
-extends RigidBody2D
+extends CollisionShape2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -11,7 +11,10 @@ func _process(delta):
 	pass
 
 
-func _on_body_entered(body):
-	if body.name == "Floor":
-		print("You lost!")
-	
+func _on_flag_body_entered(body):
+	var hero := false
+	if body.has_meta("hero"):
+		hero = body.get_meta("hero")
+	if hero:
+		print("You won!")
+	pass # Replace with function body.

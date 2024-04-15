@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbnkdw1ap2o61"]
+
+[ext_resource type="Texture2D" uid="uid://tept5cq2gcyh" path="res://Assets/elementStone012.png" id="1_8wkdp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gh47y"]
+size = Vector2(136, 68)
+
+[node name="Wood2x1" type="RigidBody2D"]
+input_pickable = true
+can_sleep = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_gh47y")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_8wkdp")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

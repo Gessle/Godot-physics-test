@@ -1,22 +1,23 @@
-[gd_scene load_steps=4 format=3 uid="uid://dosj7nau12fbv"]
+[gd_scene load_steps=4 format=3 uid="uid://b3ol2w8ek4kpc"]
 
-[ext_resource type="Texture2D" uid="uid://bh8x2gexboj5a" path="res://icon.svg" id="1_2do4m"]
-[ext_resource type="Script" path="res://block.gd" id="1_8ojm4"]
+[ext_resource type="Script" path="res://Scenes/Blocks/Hero.gd" id="1_u1uew"]
+[ext_resource type="Texture2D" uid="uid://dlj826euvokjx" path="res://Assets/alienYellow_square.png" id="2_8yc5u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gh47y"]
-size = Vector2(120, 123)
+size = Vector2(70, 66)
 
-[node name="RigidBody2D" type="RigidBody2D"]
+[node name="HeroSquare" type="RigidBody2D"]
 input_pickable = true
 can_sleep = false
-script = ExtResource("1_8ojm4")
+script = ExtResource("1_u1uew")
+metadata/hero = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, -0.5)
+position = Vector2(-1, 1)
 shape = SubResource("RectangleShape2D_gh47y")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_2do4m")
+texture = ExtResource("2_8yc5u")
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
