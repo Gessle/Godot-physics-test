@@ -7,7 +7,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass
 
 
@@ -16,5 +16,5 @@ func _on_flag_body_entered(body):
 	if body.has_meta("hero"):
 		hero = body.get_meta("hero")
 	if hero:
-		print("You won!")
-	pass # Replace with function body.
+		var win = get_parent().get_parent().get_parent().get_node("Ui").get_node("Win")
+		win.visible = true

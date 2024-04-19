@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Test1"
-run/main_scene="res://Scenes/Maps/Map3.tscn"
+config/name="Block Destroyer!"
+run/main_scene="res://SceneHandler.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 boot_splash/image="res://Assets/logo.png"
 config/icon="res://icon.svg"

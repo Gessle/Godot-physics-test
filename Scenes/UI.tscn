@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://brtubrh0jcmws"]
+[gd_scene load_steps=6 format=3 uid="uid://brtubrh0jcmws"]
 
 [ext_resource type="Script" path="res://Scenes/UI.gd" id="1_pcqov"]
 [ext_resource type="Texture2D" uid="uid://dlp2k5bs2rwgd" path="res://Assets/return.png" id="1_qnc13"]
 [ext_resource type="Texture2D" uid="uid://b27rud4u33u2g" path="res://Assets/cross.png" id="2_jpqgg"]
+[ext_resource type="FontFile" uid="uid://c7t55mnbtuice" path="res://Assets/fonts/LET'SEAT.TTF" id="4_oks0t"]
+[ext_resource type="Texture2D" uid="uid://cosuti8li0kk7" path="res://Assets/arrowRight.png" id="5_uej08"]
 
 [node name="Ui" type="CanvasLayer"]
 script = ExtResource("1_pcqov")
@@ -22,13 +24,52 @@ offset_bottom = 100.0
 size_flags_horizontal = 0
 texture_normal = ExtResource("2_jpqgg")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-anchors_preset = 1
-anchor_left = 1.0
+[node name="Win" type="ColorRect" parent="."]
+visible = false
+self_modulate = Color(0.470588, 1, 0.435294, 1)
+anchors_preset = 15
 anchor_right = 1.0
-offset_left = -204.0
-offset_bottom = 100.0
-grow_horizontal = 0
-alignment = 2
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.305882)
+
+[node name="WinText" type="Label" parent="Win"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -212.0
+offset_top = -197.0
+offset_right = 237.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 11
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("4_oks0t")
+theme_override_font_sizes/font_size = 250
+text = "Voitit"
+uppercase = true
+
+[node name="Continue" type="TextureButton" parent="Win"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -49.0
+offset_top = 55.0
+offset_right = 51.0
+offset_bottom = 155.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("5_uej08")
 
 [connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Win/Continue" to="." method="_on_continue_pressed"]

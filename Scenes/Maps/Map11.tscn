@@ -1,0 +1,99 @@
+[gd_scene load_steps=11 format=3 uid="uid://b1cqs3xcqfe1k"]
+
+[ext_resource type="PackedScene" uid="uid://cvkv51gi0xsr8" path="res://Scenes/Blocks/HeroBall.tscn" id="1_2kywf"]
+[ext_resource type="PackedScene" uid="uid://dmvg75giawkci" path="res://Scenes/Blocks/Flag.tscn" id="2_xtpn2"]
+[ext_resource type="PackedScene" uid="uid://bbnkdw1ap2o61" path="res://Scenes/Blocks/Stone2x1.tscn" id="3_3uy1f"]
+[ext_resource type="PackedScene" uid="uid://dwiclgsrwum8l" path="res://Scenes/Blocks/Stone1x2.tscn" id="4_aq8nb"]
+[ext_resource type="PackedScene" uid="uid://da42jajftrxdf" path="res://Scenes/Blocks/Wood1x3.tscn" id="5_vyy7w"]
+[ext_resource type="PackedScene" uid="uid://rgjqspjx0wql" path="res://Scenes/Blocks/Ground.tscn" id="6_kd04s"]
+[ext_resource type="PackedScene" uid="uid://dkaqu7u5ancfx" path="res://Scenes/Blocks/Wood3x1.tscn" id="7_gq42n"]
+[ext_resource type="PackedScene" uid="uid://bf8yh5j1lnjkl" path="res://Scenes/Blocks/Stone1x1.tscn" id="8_y2pf0"]
+[ext_resource type="PackedScene" uid="uid://dosj7nau12fbv" path="res://Scenes/Blocks/Wood1x1.tscn" id="9_t8i4f"]
+[ext_resource type="PackedScene" uid="uid://d2f7kpw8gj2k3" path="res://Scenes/Blocks/Wood1x2.tscn" id="10_ttf6n"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(543, 189.5)
+
+[node name="HeroBall" parent="." instance=ExtResource("1_2kywf")]
+position = Vector2(-367, -136.5)
+
+[node name="Flag" parent="." instance=ExtResource("2_xtpn2")]
+position = Vector2(701, 284.5)
+
+[node name="Wood2x1" parent="." instance=ExtResource("3_3uy1f")]
+position = Vector2(482, 420.5)
+
+[node name="Wood1x2" parent="." instance=ExtResource("4_aq8nb")]
+position = Vector2(241, 384.5)
+
+[node name="Wood1x20" parent="." instance=ExtResource("5_vyy7w")]
+position = Vector2(-431, 344.5)
+
+[node name="Wood1x4" parent="." instance=ExtResource("5_vyy7w")]
+position = Vector2(-268, 349.5)
+
+[node name="Wood1x5" parent="." instance=ExtResource("5_vyy7w")]
+position = Vector2(-187, -28.5)
+
+[node name="Wood1x6" parent="." instance=ExtResource("5_vyy7w")]
+position = Vector2(-138, 347.5)
+
+[node name="Node2D" parent="." instance=ExtResource("6_kd04s")]
+position = Vector2(-584, 495.5)
+
+[node name="Node2D2" parent="." instance=ExtResource("6_kd04s")]
+position = Vector2(116, 495.5)
+
+[node name="Wood1x7" parent="." instance=ExtResource("7_gq42n")]
+position = Vector2(356, 271.5)
+
+[node name="Wood1x22" parent="." instance=ExtResource("7_gq42n")]
+position = Vector2(-374, -30.5)
+
+[node name="Wood1x8" parent="." instance=ExtResource("5_vyy7w")]
+position = Vector2(239, 122.5)
+
+[node name="Wood1x9" parent="." instance=ExtResource("5_vyy7w")]
+position = Vector2(465, 122.5)
+
+[node name="Wood1x1" parent="." instance=ExtResource("8_y2pf0")]
+position = Vector2(42, 420.5)
+
+[node name="Wood1x10" parent="." instance=ExtResource("9_t8i4f")]
+position = Vector2(195, 274.5)
+
+[node name="Wood1x11" parent="." instance=ExtResource("7_gq42n")]
+position = Vector2(-251, 197.5)
+
+[node name="Wood1x12" parent="." instance=ExtResource("9_t8i4f")]
+position = Vector2(316, 415.5)
+
+[node name="Wood1x17" parent="." instance=ExtResource("9_t8i4f")]
+position = Vector2(461, 348.5)
+
+[node name="Wood1x13" parent="." instance=ExtResource("9_t8i4f")]
+position = Vector2(-307, 47.5)
+
+[node name="Wood1x21" parent="." instance=ExtResource("9_t8i4f")]
+position = Vector2(-278, -107.5)
+
+[node name="Wood1x23" parent="." instance=ExtResource("9_t8i4f")]
+position = Vector2(-151, 116.5)
+
+[node name="Wood1x24" parent="." instance=ExtResource("9_t8i4f")]
+position = Vector2(507, 270.5)
+
+[node name="Wood1x14" parent="." instance=ExtResource("7_gq42n")]
+position = Vector2(-305, 120.5)
+
+[node name="Wood1x15" parent="." instance=ExtResource("4_aq8nb")]
+position = Vector2(-524, 387.5)
+
+[node name="Wood1x16" parent="." instance=ExtResource("4_aq8nb")]
+position = Vector2(697, 391.5)
+
+[node name="Wood1x18" parent="." instance=ExtResource("5_vyy7w")]
+position = Vector2(-451, 119.5)
+
+[node name="Wood1x19" parent="." instance=ExtResource("10_ttf6n")]
+position = Vector2(41, 312.5)

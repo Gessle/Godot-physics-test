@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cl5aig2p30hpj"]
+
+[ext_resource type="FontFile" uid="uid://c7t55mnbtuice" path="res://Assets/fonts/LET'SEAT.TTF" id="1_cyioo"]
+
+[node name="Mission" type="Button"]
+offset_right = 128.0
+offset_bottom = 128.0
+theme_override_fonts/font = ExtResource("1_cyioo")
+theme_override_font_sizes/font_size = 100

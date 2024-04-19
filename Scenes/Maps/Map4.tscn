@@ -1,0 +1,87 @@
+[gd_scene load_steps=11 format=3 uid="uid://tw6a5fjjph1e"]
+
+[ext_resource type="PackedScene" uid="uid://cvkv51gi0xsr8" path="res://Scenes/Blocks/HeroBall.tscn" id="1_jb786"]
+[ext_resource type="PackedScene" uid="uid://dmvg75giawkci" path="res://Scenes/Blocks/Flag.tscn" id="2_onxya"]
+[ext_resource type="PackedScene" uid="uid://bbnkdw1ap2o61" path="res://Scenes/Blocks/Stone2x1.tscn" id="3_jdyg5"]
+[ext_resource type="PackedScene" uid="uid://dwiclgsrwum8l" path="res://Scenes/Blocks/Stone1x2.tscn" id="4_o0yd1"]
+[ext_resource type="PackedScene" uid="uid://da42jajftrxdf" path="res://Scenes/Blocks/Wood1x3.tscn" id="5_1jh5i"]
+[ext_resource type="PackedScene" uid="uid://rgjqspjx0wql" path="res://Scenes/Blocks/Ground.tscn" id="6_ij08u"]
+[ext_resource type="PackedScene" uid="uid://dkaqu7u5ancfx" path="res://Scenes/Blocks/Wood3x1.tscn" id="7_v05rb"]
+[ext_resource type="PackedScene" uid="uid://y5uwwhwdr3s1" path="res://Scenes/Blocks/Wood2x1.tscn" id="8_3ag2e"]
+[ext_resource type="PackedScene" uid="uid://bf8yh5j1lnjkl" path="res://Scenes/Blocks/Stone1x1.tscn" id="9_dg5dn"]
+[ext_resource type="PackedScene" uid="uid://dosj7nau12fbv" path="res://Scenes/Blocks/Wood1x1.tscn" id="10_lsyye"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(543, 189.5)
+
+[node name="HeroBall" parent="." instance=ExtResource("1_jb786")]
+position = Vector2(-336, -167.5)
+
+[node name="Flag" parent="." instance=ExtResource("2_onxya")]
+position = Vector2(699, 423.5)
+
+[node name="Wood2x1" parent="." instance=ExtResource("3_jdyg5")]
+position = Vector2(263, 282.5)
+
+[node name="Wood1x2" parent="." instance=ExtResource("4_o0yd1")]
+position = Vector2(265, 390.5)
+
+[node name="Wood1x3" parent="." instance=ExtResource("5_1jh5i")]
+position = Vector2(-414, 349.5)
+
+[node name="Wood1x4" parent="." instance=ExtResource("5_1jh5i")]
+position = Vector2(-268, 349.5)
+
+[node name="Wood1x5" parent="." instance=ExtResource("5_1jh5i")]
+position = Vector2(-337, 50.5)
+
+[node name="Wood1x6" parent="." instance=ExtResource("5_1jh5i")]
+position = Vector2(-78, 349.5)
+
+[node name="Node2D" parent="." instance=ExtResource("6_ij08u")]
+position = Vector2(-584, 495.5)
+
+[node name="Node2D2" parent="." instance=ExtResource("6_ij08u")]
+position = Vector2(116, 495.5)
+
+[node name="Wood1x7" parent="." instance=ExtResource("7_v05rb")]
+position = Vector2(-136, 197.5)
+
+[node name="Wood2x2" parent="." instance=ExtResource("8_3ag2e")]
+position = Vector2(-340, 204.5)
+
+[node name="Wood1x8" parent="." instance=ExtResource("5_1jh5i")]
+position = Vector2(-23, 38.5)
+
+[node name="Wood1x9" parent="." instance=ExtResource("5_1jh5i")]
+position = Vector2(19, 347.5)
+
+[node name="Wood1x1" parent="." instance=ExtResource("9_dg5dn")]
+position = Vector2(-260, 122.5)
+
+[node name="Wood1x10" parent="." instance=ExtResource("10_lsyye")]
+position = Vector2(23, 200.5)
+
+[node name="Wood1x11" parent="." instance=ExtResource("7_v05rb")]
+position = Vector2(-329, -96.5)
+
+[node name="Wood1x12" parent="." instance=ExtResource("10_lsyye")]
+position = Vector2(-416, -175.5)
+
+[node name="Wood1x13" parent="." instance=ExtResource("10_lsyye")]
+position = Vector2(-238, -176.5)
+
+[node name="Wood1x14" parent="." instance=ExtResource("7_v05rb")]
+position = Vector2(-173, 10.5)
+
+[node name="Wood1x15" parent="." instance=ExtResource("4_o0yd1")]
+position = Vector2(-505, 389.5)
+
+[node name="Wood1x16" parent="." instance=ExtResource("4_o0yd1")]
+position = Vector2(-505, 247.5)
+
+[node name="Wood1x17" parent="." instance=ExtResource("10_lsyye")]
+position = Vector2(-498, 129.5)
+
+[node name="Wood1x18" parent="." instance=ExtResource("5_1jh5i")]
+position = Vector2(-496, -25.5)

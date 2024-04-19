@@ -1,6 +1,5 @@
-[gd_scene load_steps=9 format=3 uid="uid://cxcc7x7hafn8s"]
+[gd_scene load_steps=8 format=3 uid="uid://cxcc7x7hafn8s"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_ng03d"]
 [ext_resource type="PackedScene" uid="uid://d2f7kpw8gj2k3" path="res://Scenes/Blocks/Wood1x2.tscn" id="4_i35uw"]
 [ext_resource type="PackedScene" uid="uid://dosj7nau12fbv" path="res://Scenes/Blocks/Wood1x1.tscn" id="5_1hxy7"]
 [ext_resource type="PackedScene" uid="uid://dkaqu7u5ancfx" path="res://Scenes/Blocks/Wood3x1.tscn" id="6_71ixe"]
@@ -11,7 +10,6 @@
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(543, 189.5)
-script = ExtResource("1_ng03d")
 
 [node name="Node2D" parent="." instance=ExtResource("5_1hxy7")]
 position = Vector2(80, 284.5)
